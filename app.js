@@ -47,7 +47,7 @@ const questions = [
         answer: "In service to our nation With honor, respect, and devotion to duty We protect We Defend We Save We are Semper Paratus We Are The United States Coast Guard"
     },
     // Enlisted Ranks
-     { prompt: "What is E-1?", answer: "Seaman Recruit" },
+    { prompt: "What is E-1?", answer: "Seaman Recruit" },
     { prompt: "What is E-2?", answer: "Seaman Apprentice" },
     { prompt: "What is E-3?", answer: "Seaman" },
     { prompt: "What is E-4?", answer: "Petty Officer Third Class" },
