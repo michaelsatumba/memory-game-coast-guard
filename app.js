@@ -5,7 +5,7 @@ const questions = [
     },
     {
         prompt: "General Order 2",
-        answer: "To walk my post in a military manner, keeping always on the alert, and observing everything that takes place within sight or hearing"
+        answer: "To walk my post in a military manner, keeping always on the alert and observing everything that takes place within sight or hearing"
     },
     {
         prompt: "General Order 3",
