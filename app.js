@@ -74,6 +74,30 @@ const questions = [
     { prompt: "What is O-8?", answer: "Rear Admiral" },
     { prompt: "What is O-9?", answer: "Vice Admiral" },
     { prompt: "What is O-10?", answer: "Admiral" },
+
+    // Coast Guard Rates (Enlisted Job Specialties)
+    { prompt: "What is the rate for AET?", answer: "Avionics Electrical Technician" },
+    { prompt: "What is the rate for AMT?", answer: "Aviation Maintenance Technician" },
+    { prompt: "What is the rate for AST?", answer: "Aviation Survival Technician" },
+    { prompt: "What is the rate for BM?", answer: "Boatswain's Mate" },
+    { prompt: "What is the rate for CMS?", answer: "Cyber Mission Specialist" },
+    { prompt: "What is the rate for CS?", answer: "Culinary Specialist" },
+    { prompt: "What is the rate for DC?", answer: "Damage Controlman" },
+    { prompt: "What is the rate for DV?", answer: "Diver" },
+    { prompt: "What is the rate for EM?", answer: "Electrician's Mate" },
+    { prompt: "What is the rate for ET?", answer: "Electronics Technician" },
+    { prompt: "What is the rate for GM?", answer: "Gunner's Mate" },
+    { prompt: "What is the rate for HS?", answer: "Health Services Technician" },
+    { prompt: "What is the rate for IS?", answer: "Intelligence Specialist" },
+    { prompt: "What is the rate for IT?", answer: "Information Systems Technician" },
+    { prompt: "What is the rate for IV?", answer: "Investigator" },
+    { prompt: "What is the rate for ME?", answer: "Maritime Enforcement Specialist" },
+    { prompt: "What is the rate for MK?", answer: "Machinery Technician" },
+    { prompt: "What is the rate for MST?", answer: "Marine Science Technician" },
+    { prompt: "What is the rate for OS?", answer: "Operations Specialist" },
+    { prompt: "What is the rate for PA?", answer: "Public Affairs Specialist" },
+    { prompt: "What is the rate for SK?", answer: "Storekeeper" },
+    { prompt: "What is the rate for YN?", answer: "Yeoman" }
 ];
 
 let current = 0;
