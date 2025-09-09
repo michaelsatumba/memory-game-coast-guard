@@ -102,10 +102,12 @@ const questions = [
 
 let current = 0;
 
-function showPrompt() {
+function showPrompt(clearAnswer = true) {
     document.getElementById('prompt').textContent = questions[current].prompt;
-    document.getElementById('answer').value = '';
-    document.getElementById('result').textContent = '';
+    if (clearAnswer) {
+        document.getElementById('answer').value = '';
+        document.getElementById('result').textContent = '';
+    }
 }
 
 document.getElementById('submit').addEventListener('click', () => {
@@ -113,11 +115,24 @@ document.getElementById('submit').addEventListener('click', () => {
     const correctAnswer = questions[current].answer;
     if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
         document.getElementById('result').textContent = "Correct!";
-        current = (current + 1) % questions.length;
-        setTimeout(showPrompt, 1000);
+        setTimeout(() => {
+            current = (current + 1) % questions.length;
+            showPrompt();
+        }, 1000);
     } else {
         document.getElementById('result').textContent = "Try again!";
     }
+});
+
+// Previous and Next button logic
+document.getElementById('prev').addEventListener('click', () => {
+    current = (current - 1 + questions.length) % questions.length;
+    showPrompt();
+});
+
+document.getElementById('next').addEventListener('click', () => {
+    current = (current + 1) % questions.length;
+    showPrompt();
 });
 
 document.getElementById('answer').addEventListener('keydown', function(event) {
